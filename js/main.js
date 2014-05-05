@@ -4,4 +4,5 @@
 
 (function($){
     $('h1').fadeIn(2000);
+    $('li').fadeIn(1200);
 })(jQuery);
