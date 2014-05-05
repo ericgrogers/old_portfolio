@@ -1,0 +1,68 @@
+/* Eric G Rogers | Portfolio Website */
+
+body {
+    background-image: url("../images/dark_exa.png");
+    /*box-shadow: 30px 0 100px rgba(100, 100, 100, 0.3) inset;*/
+}
+
+.app-container {
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    width: 960px;
+    height: 150px;
+
+}
+
+h1 {
+    width: 400px;
+    margin-left: 50px;
+    float: left;
+}
+
+nav {
+    float: left;
+    position: fixed;
+    top: 30px;
+    left: 40%;
+}
+
+nav li {
+    width: 120px;
+    text-align: center;
+    float: left;
+    list-style: none;
+}
+nav li a {
+    font-size: 24px;
+    color: #fff;
+}
+
+nav a:before, nav a:after {
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+}
+nav a:before {
+    content: "[";
+    margin-right: 10px;
+    transform: translateX(20px);
+}
+nav a:after {
+    content: "]";
+    margin-left: 10px;
+    transform: translateX(-20px);
+}
+nav a:hover:before, nav a:hover:after, nav a:focus:before, nav a:focus:after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#content {
+    width: 960px;
+    height: 1000px;
+}
