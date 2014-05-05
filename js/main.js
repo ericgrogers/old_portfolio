@@ -5,6 +5,6 @@
 (function($){
     $('h1').fadeIn(1000);
     $('#about').fadeIn(1200);
-    $('#skills').fadeIn(1400);
-    $('#contact').fadeIn(1600);
+    $('#projects').fadeIn(1600);
+    $('#contact').fadeIn(2000);
 })(jQuery);
