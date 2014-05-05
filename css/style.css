@@ -22,6 +22,7 @@ h1 {
     width: 400px;
     margin-left: 50px;
     float: left;
+    display: none;
 }
 
 nav {
