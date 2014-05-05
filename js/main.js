@@ -3,6 +3,8 @@
  */
 
 (function($){
-    $('h1').fadeIn(2000);
-    $('li').fadeIn(1200);
+    $('h1').fadeIn(1000);
+    $('#about').fadeIn(1200);
+    $('#skills').fadeIn(1400);
+    $('#contact').fadeIn(1600);
 })(jQuery);
