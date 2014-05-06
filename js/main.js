@@ -7,4 +7,6 @@
     $('#about').fadeIn(1200);
     $('#projects').fadeIn(1600);
     $('#contact').fadeIn(2000);
+
+
 })(jQuery);
