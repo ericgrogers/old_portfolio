@@ -1,35 +1,39 @@
 /* Eric G Rogers | Portfolio Website */
 
-body {
-    background-image: url("../images/dark_exa.png");
-    /*box-shadow: 30px 0 100px rgba(100, 100, 100, 0.3) inset;*/
-}
-
-.app-container {
-    max-width: 960px;
-    height: 100%;
-    margin: 0 auto;
-
-}
-
 header {
     width: 960px;
     height: 150px;
+}
 
+p {
+    font-size: 24px;
+    width: 600px;
+    margin: 60px auto 0 auto;
 }
 
 h1 {
     width: 400px;
-    margin-left: 50px;
-    float: left;
-    display: none;
+    position: fixed;
+    left: 200px;
 }
 
 nav {
-    float: left;
+    width: 100%;
+    height: 130px;
+    background: #3d3d3d;
     position: fixed;
+    top: 0;
+    z-index: 100;
+    -webkit-box-shadow: inset -1px 17px 99px 0px rgba(0,0,0,0.77);
+    -moz-box-shadow: inset -1px 17px 99px 0px rgba(0,0,0,0.77);
+    box-shadow: inset -1px 17px 99px 0px rgba(0,0,0,0.77);
+}
+
+nav li:first-child, nav li + li {
+    position: relative;
     top: 30px;
-    left: 40%;
+    left: 50%;
+
 }
 
 nav li {
@@ -37,7 +41,6 @@ nav li {
     text-align: center;
     float: left;
     list-style: none;
-    display: none;
 }
 nav li a {
     font-size: 24px;
@@ -64,7 +67,47 @@ nav a:hover:before, nav a:hover:after, nav a:focus:before, nav a:focus:after {
     transform: translateX(0px);
 }
 
-#content {
+#content1 {
     width: 960px;
+    height: 600px;
+    border: 1px solid #fff;
+    margin: 30px auto;
+}
+
+/*backgrounds*/
+
+#home {
+    background: url(../images/dark_exa.png) 50% 0 repeat fixed; min-height: 1000px;
     height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+}
+
+#home article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+}
+
+#about {
+    background: url(../images/skulls.png) 50% 0 repeat fixed; min-height: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#about article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
 }
