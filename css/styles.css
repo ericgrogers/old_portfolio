@@ -1,0 +1,129 @@
+.page-container {
+  position: relative;
+  z-index: 0;
+  background: #333; }
+
+header {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  height: 110px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  z-index: 5; }
+  header:after {
+    content: "";
+    clear: both;
+    display: block; }
+  header .social {
+    width: 300px;
+    float: right;
+    margin: 30px 0 30px 0; }
+    header .social li {
+      float: left;
+      width: 50px;
+      list-style: none;
+      margin-right: 30px; }
+      header .social li img {
+        width: 50px; }
+
+h2 {
+  text-align: center;
+  font-size: 3em; }
+
+.sidebar-toggle {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  font-size: 3em;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 6;
+  color: #333333; }
+  .sidebar-toggle:hover {
+    color: #2f7fb8; }
+
+.sidebar {
+  position: fixed;
+  top: 110px;
+  right: 0;
+  bottom: 0px;
+  left: -190px;
+  width: 180px;
+  pading: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+  .sidebar li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    cursor: pointer;
+    list-style: none; }
+    .sidebar li:nth-of-type(1) {
+      margin-top: 30px; }
+    .sidebar li:hover {
+      color: white; }
+
+#sidebar-toggle {
+  display: none; }
+  #sidebar-toggle:checked + .page-container .sidebar {
+    left: 0px; }
+
+.content-container {
+  position: relative;
+  top: 50px;
+  background: url("../media/images/background_poster.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 800px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+
+.top-content {
+  padding-top: 300px;
+  text-align: center;
+  height: 500px;
+  clear: both;
+  color: #fff;
+  background: url("../media/images/dotted_overlay.png");
+  background-color: rgba(0, 0, 0, 0.3); }
+  .top-content h1 {
+    color: #fff;
+    font-size: 3em; }
+
+.about {
+  clear: both;
+  z-index: 2;
+  background: #fff; }
+  .about h3 {
+    float: left;
+    width: 960px;
+    margin: 0 auto; }
+  .about p {
+    float: left;
+    width: 960px;
+    margin: 0 auto; }
+  .about:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.projects {
+  background: #fff;
+  clear: both; }
+  .projects:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+/*# sourceMappingURL=styles.css.map */
