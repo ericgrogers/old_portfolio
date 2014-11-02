@@ -9,6 +9,8 @@
     <!-- Normalize.css -->
       <link href="css/normalize.css" rel="stylesheet">
 
+      <link href="media/images/icons/egr.ico" rel="shortcut icon">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -45,7 +47,7 @@
           <source type="video/ogg" src="media/video/hdd_vid.ogv" />
       </video>
 
-        <div class="top-content">
+        <section class="top-content">
             <h1>[ <span>eric g rogers</span> ]</h1>
             <h2>Designer / Developer</h2>
 
@@ -53,9 +55,9 @@
                 <p>Find out more</p>
                 <span class="glyphicon glyphicon-hand-down"></span>
             </div>
-        </div>
+        </section>
 
-        <div class="about">
+        <section class="about">
             <h3 class="col-md-offset-2 col-md-8">About Me</h3>
             <p><img class="col-md-offset-2 col-md-2" src="media/images/eric.jpg" alt="Mugshot" /></p>
             <p class="col-md-offset-2 col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
@@ -65,9 +67,9 @@
                 aliquid, amet
                 aperiam
                 commodi dolor dolorem dolores doloribus id illo molestias necessitatibus non numquam quas reprehenderit saepe sunt tempore voluptatem.</p>
-        </div>
+        </section>
 
-        <div class="proficiencies">
+        <section class="proficiencies">
             <h4 class="col-md-offset-2 col-md-8">Some of my skills include:</h4>
             <ul class="col-md-12">
                 <li class="col-md-offset-2 col-md-2">HTML5</li>
@@ -87,23 +89,70 @@
                 <li class="col-md-2">Animation</li>
                 <li class="col-md-2">SEO</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="projects">
+        <section class="projects">
             <h3 class="col-md-offset-2 col-md-8">Projects</h3>
-            <ul class="col-md-offset-1 col-md-10">
-                <li class="col-md-2">Movie Ndex movie info</li>
-                <li class="col-md-2">World Surf site design</li>
-                <li class="col-md-2">Horas Professional Time Management</li>
-                <li class="col-md-2">Chilango Restaurant redesign</li>
-                <li class="col-md-2">Skrollr.js presentation</li>
-                <li class="col-md-2">The Guitar Shop</li>
-                <li class="col-md-2">Bakery Secrets</li>
-                <li class="col-md-2">Web Studio Admin</li>
-                <li class="col-md-2">Angular From Scratch</li>
-                <li class="col-md-2">Audio/Video Editing</li>
-            </ul>
-        </div>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> Movie Ndex movie
+                    info</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> World Surf site
+                    design</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> Horas Professional
+                    Time Management</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> Chila
+                    ngo Restaurant redesign</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Skrollr.js presentation</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>The Guitar Shop</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Bakery Secrets</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Web Studio Admin</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Video Gallery</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Audio/Video Editing</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Database Manipulation</p></figcaption></figure>
+                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
+                        /><figcaption><p>Server Staging with GIT implementation</p></figcaption></figure>
+        </section>
+
+        <section class="contact">
+            <h3 class="col-md-offset-2 col-md-8">Contact Me</h3>
+            <form class="form-horizontal col-md-offset-2 col-md-8" role="form">
+                <div class="form-group">
+                    <label for="name" class="col-md-2 control-label sr-only">Name</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-2 control-label sr-only">Email</label>
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="col-md-2 control-label sr-only">Subject</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-md-2 control-label sr-only">Message</label>
+                    <div class="col-md-8">
+                        <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </div>
+                </div>
+            </form>
+        </section>
 
     <footer>
         <p>Copyright &copy;2014 Eric G Rogers All Rights Reserved.</p>

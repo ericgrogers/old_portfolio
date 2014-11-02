@@ -76,7 +76,7 @@ header {
 
 .content-container {
   position: relative;
-  top: 50px;
+  top: 60px;
   background-size: cover;
   background-attachment: fixed;
   max-height: 800px;
@@ -86,7 +86,7 @@ header {
 
 .top-content {
   position: relative;
-  padding-top: 200px;
+  padding-top: 230px;
   text-align: center;
   height: 700px;
   clear: both;
@@ -112,7 +112,7 @@ header {
   z-index: 2;
   background: #fff;
   position: relative;
-  top: -10px; }
+  top: 0; }
   .about h3 {
     padding-top: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -127,7 +127,7 @@ header {
 .proficiencies {
   position: relative;
   padding-top: 30px;
-  top: -10px;
+  top: 0;
   height: 100%;
   background: url("../media/images/dotted_overlay.png");
   background-color: rgba(0, 0, 0, 0.8); }
@@ -151,15 +151,53 @@ header {
 
 .projects {
   position: relative;
-  top: -30px;
+  top: 0;
   background: #fff;
   clear: both; }
-  .projects ul li {
-    padding-bottom: 30px; }
+  .projects h3 {
+    padding: 50px 0 30px;
+    font-size: 2em;
+    text-align: center;
+    clear: both; }
+  .projects figcaption {
+    padding: 5px 0 50px; }
   .projects:after {
     content: "";
     display: block;
     clear: both; }
+
+.contact {
+  height: 700px;
+  position: relative;
+  top: 0;
+  padding: 50px 0;
+  z-index: 3;
+  background: url("../media/images/dotted_overlay.png") repeat;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .contact h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .contact h3 input {
+      padding-bottom: 40px; }
+  .contact:after {
+    padding: 0;
+    margin: 0;
+    content: "";
+    display: block;
+    clear: both; }
+
+footer {
+  position: relative;
+  top: 0;
+  height: 80px;
+  background: #fff;
+  text-align: center;
+  line-height: 4;
+  font-size: 1.5em; }
 
 video {
   position: fixed;
