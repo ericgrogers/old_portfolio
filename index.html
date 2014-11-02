@@ -36,22 +36,52 @@
 
       <label class="sidebar-toggle glyphicon glyphicon-align-justify" for="sidebar-toggle"></label>
   <div class="content-container">
-
+      <video poster="media/images/posters/background_poster.jpg"  preload="auto" autoplay loop>
+          <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+          <source type="video/mp4" src="media/video/hdd_vid.mp4" />
+          <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+          <source type="video/webm" src="media/video/hdd_vid.webm" />
+          <!-- Ogg/Vorbis for older Firefox and Opera versions -->
+          <source type="video/ogg" src="media/video/hdd_vid.ogv" />
+      </video>
 
         <div class="top-content">
             <h1>[ <span>eric g rogers</span> ]</h1>
             <h2>Designer / Developer</h2>
 
-            <div class="down-arrow">
+            <div class="down-arrow col-md-12">
                 <p>Find out more</p>
                 <span class="glyphicon glyphicon-hand-down"></span>
             </div>
         </div>
 
         <div class="about">
-            <h3>About Me</h3>
-            <p><img src="media/images/eric.jpg" alt="Mugshot" /></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores cum cupiditate eveniet hic ipsa ipsam ipsum iste libero maiores nisi, odio possimus quae quis, quod, sit tenetur. Dolore, doloremque.</p>
+            <h3 class="col-md-offset-2 col-md-8">About Me</h3>
+            <p><img class="col-md-offset-2 col-md-2" src="media/images/eric.jpg" alt="Mugshot" /></p>
+            <p class="col-md-offset-2 col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                asperiores cum cupiditate eveniet
+                hic ipsa ipsam ipsum iste libero maiores nisi, odio possimus quae quis, quod, sit tenetur. Dolore, doloremque.</p>
+            <p class="col-md-offset-2 col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias,
+                aliquid, amet
+                aperiam
+                commodi dolor dolorem dolores doloribus id illo molestias necessitatibus non numquam quas reprehenderit saepe sunt tempore voluptatem.</p>
+        </div>
+
+        <div class="proficiencies">
+            <h4 class="col-md-offset-2 col-md-8">Front End Technologies</h4>
+            <ul class="col-md-12">
+                <li class="col-md-offset-2 col-md-2">HTML5</li>
+                <li class="col-md-2">CSS3</li>
+                <li class="col-md-2">JavaScript</li>
+                <li class="col-md-2">jQuery</li>
+            </ul>
+            <h4 class="col-md-offset-2 col-md-8">Back End Technologies</h4>
+            <ul class="col-md-12">
+                <li class="col-md-offset-2 col-md-2">mySQL</li>
+                <li class="col-md-2">PHP</li>
+                <li class="col-md-2">Python</li>
+                <li class="col-md-2">Google App Engine</li>
+            </ul>
         </div>
 
         <div class="projects">
@@ -87,6 +117,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/mediaelement-and-player.min.js"></script>
   </body>
 </html>
