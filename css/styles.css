@@ -154,6 +154,8 @@ header {
   top: -30px;
   background: #fff;
   clear: both; }
+  .projects ul li {
+    padding-bottom: 30px; }
   .projects:after {
     content: "";
     display: block;
