@@ -154,16 +154,25 @@ header {
 
 .projects {
   position: relative;
-  top: 0;
+  top: -10px;
   background: #fff;
+  padding-bottom: 50px;
   clear: both; }
   .projects h3 {
     padding: 50px 0 30px;
     font-size: 2em;
     text-align: center;
     clear: both; }
-  .projects figcaption {
-    padding: 5px 0 50px; }
+  .projects li {
+    list-style: none;
+    margin-bottom: 40px;
+    text-align: center; }
+    .projects li span {
+      font-size: 1.3em; }
+    .projects li img {
+      width: 240px;
+      border: 3px solid rgba(0, 0, 0, 0.3);
+      margin-top: 10px; }
   .projects:after {
     content: "";
     display: block;
@@ -172,7 +181,7 @@ header {
 .contact {
   height: 700px;
   position: relative;
-  top: 0;
+  top: -10px;
   padding: 50px 0;
   z-index: 3;
   background: url("../media/images/dotted_overlay.png") repeat;
@@ -195,7 +204,7 @@ header {
 
 footer {
   position: relative;
-  top: 0;
+  top: -10px;
   height: 80px;
   background: #fff;
   text-align: center;

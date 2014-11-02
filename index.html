@@ -24,11 +24,12 @@
   </head>
 
   <body>
+  <div id="home"></div>
 
 
 
   <input type="checkbox" id="sidebar-toggle"/>
-  <div class="page-container">
+  <div class="page-container container-fluid">
       <header>
           <ul class="social">
               <li><a href="#" class="social-github"><img src="media/images/github.png" title="github"/></a></li>
@@ -53,7 +54,7 @@
 
             <div class="down-arrow col-md-12">
                 <p>Find out more</p>
-                <span class="glyphicon glyphicon-hand-down"></span>
+                <a href="#about"><span class="glyphicon glyphicon-hand-down"></span></a>
             </div>
         </section>
 
@@ -93,30 +94,61 @@
 
         <section class="projects">
             <h3 class="col-md-offset-2 col-md-8">Projects</h3>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> Movie Ndex movie
-                    info</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> World Surf site
-                    design</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> Horas Professional
-                    Time Management</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png" /><figcaption><p> Chila
-                    ngo Restaurant redesign</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Skrollr.js presentation</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>The Guitar Shop</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Bakery Secrets</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Web Studio Admin</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Video Gallery</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Audio/Video Editing</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Database Manipulation</p></figcaption></figure>
-                <figure class="col-md-3"><img class="img-thumbnail" src="media/images/movie_ndex.png"
-                        /><figcaption><p>Server Staging with GIT implementation</p></figcaption></figure>
+            <div id="gallery">
+                <ul>
+                    <li class="col-md-3"><span>Movie Ndex movie search site.</span><a
+                            href="media/images/projects/movieindex.jpg" data-lightbox="gallery
+                    " data-t
+                           itle="Wonderful Gourmet Cupcakes."><img id="img1" src="media/images/projects/thumbs/moviendex_thumb.jpg" alt=""
+                            /></a></li>
+                    <li class="col-md-3"><span>World surf page design.</span><a
+                            href="media/images/projects/worldsurf.jpg"
+                                                          data-lightbox="gallery"
+                           data-title="Delicious Homemade Pizza."><img
+                            id="img2" src="media/images/projects/thumbs/worldsurf_thumb.jpg" alt=""/></a></li>
+                    <li class="col-md-3"><span>Horas Time Management app.</span><a
+                            href="media/images/projects/horas.jpg"
+                                                           data-lightbox="gallery"
+                           data-title="Freshly Baked Croissants."><img
+                            id="img3" src="media/images/projects/thumbs/horas_thumb.jpg" alt=""/></a></li>
+                    <li class="col-md-3"><span>Chilango restaurant redesign.</span><a
+                            href="media/images/projects/chilango.jpg"
+                                                          data-lightbox="gallery"
+                           data-title="Prepping the dough."><img
+                            id="img4" src="media/images/projects/thumbs/chilango_thumb.jpg" alt=""/></a></li>
+                    <li class="col-md-3"><span>Skrollr.js video presentation.</span><a
+                            href="media/images/projects/skrollr.jpg" data-lightbox="gallery"
+                                             data-title="Sweet Honey Cake."><img
+                            id="img5
+                    " src="media/images/projects/thumbs/skrollr_thumb.jpg" alt=""/></a></li>
+                    <li class="col-md-3"><span>Guitar Shop standards project.</span><a
+                            href="media/images/projects/guitarshop.jpg" data-lightbox="gallery"
+                           data-title="Birthday Cupcakes with candy."><img id="img6"
+                           src="media/images/projects/thumbs/guitarshop_thumb.jpg"
+                           alt=""/></a></li>
+                    <li class="col-md-3"><span>Bakery Secrets animation.</span><a
+                            href="media/images/projects/bakerysecrets.jpg" data-lightbox="gallery"
+                           data-title="Birthday Cupcakes with candy."><img id="img7"
+                                                                           src="media/images/projects/thumbs/bakerysecrets_thumb.jpg"
+                                                                           alt=""/></a></li>
+                    <li class="col-md-3"><span>AFS video gallery.</span><a href="media/images/projects/videolibrary.jpg"
+                                                          data-lightbox="gallery"
+                           data-title="Birthday Cupcakes with candy."><img id="img8"
+                                                                           src="media/images/projects/thumbs/videolibrary_thumb.jpg"
+                                                                           alt=""/></a></li>
+                    <li class="col-md-3"><span>Audio/Video editing.</span><a href="media/images/projects/audiovideo.jpg"
+                                                          data-lightbox="gallery"
+                           data-title="Birthday Cupcakes with candy."><img id="img9"
+                                                                           src="media/images/projects/thumbs/audioedit_thumb.jpg"
+                                                                           alt=""/></a></li>
+                    <li class="col-md-3"><span>SoAir Airline page design.</span><a
+                            href="media/images/projects/soair.jpg" data-lightbox="gallery"
+                           data-title="Birthday Cupcakes with candy."><img id="img10"
+                                                                           src="media/images/projects/thumbs/soair_thumb.jpg"
+                                                                           alt=""/></a></li>
+                </ul>
+            </div><!-- End of gallery -->
+
         </section>
 
         <section class="contact" id="contact">
@@ -162,9 +194,10 @@
 
   <div class="sidebar">
       <ul>
-          <li class="glyphicon glyphicon-list-alt"><a href="#about"></a></li>
-          <li class="glyphicon glyphicon-briefcase"><a href="#skills"></a></li>
-          <li class="glyphicon glyphicon-envelope"><a href="#contact"></a></li>
+          <li><a class="glyphicon glyphicon-home" href="#home"></a> </li>
+          <li><a class="glyphicon glyphicon-list-alt" href="#about"></a></li>
+          <li><a class="glyphicon glyphicon-briefcase" href="#skills"></a></li>
+          <li><a class="glyphicon glyphicon-envelope" href="#contact"></a></li>
       </ul>
   </div>
       </div><!-- end page-container -->
