@@ -154,7 +154,7 @@ header {
 
 .projects {
   position: relative;
-  top: -10px;
+  top: 0;
   background: #fff;
   padding-bottom: 50px;
   clear: both; }
@@ -162,26 +162,35 @@ header {
     padding: 50px 0 30px;
     font-size: 2em;
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     clear: both; }
-  .projects li {
-    list-style: none;
-    margin-bottom: 40px;
-    text-align: center; }
-    .projects li span {
-      font-size: 1.3em; }
-    .projects li img {
-      width: 240px;
-      border: 3px solid rgba(0, 0, 0, 0.3);
-      margin-top: 10px; }
+  .projects #back-button {
+    position: absolute;
+    left: 50px;
+    top: 20%;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+    .projects #back-button:hover {
+      color: rgba(0, 0, 0, 0.8); }
+  .projects #forward-button {
+    position: absolute;
+    right: 50px;
+    top: 20%;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+    .projects #forward-button:hover {
+      color: rgba(0, 0, 0, 0.8); }
   .projects:after {
     content: "";
     display: block;
     clear: both; }
 
 .contact {
-  height: 700px;
+  height: 100%;
   position: relative;
-  top: -10px;
+  top: 0;
   padding: 50px 0;
   z-index: 3;
   background: url("../media/images/dotted_overlay.png") repeat;
@@ -190,26 +199,26 @@ header {
     text-align: center;
     color: #fff;
     font-size: 2em;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     margin-bottom: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
     .contact h3 input {
       padding-bottom: 40px; }
   .contact:after {
-    padding: 0;
-    margin: 0;
     content: "";
     display: block;
     clear: both; }
 
 footer {
   position: relative;
-  top: -10px;
-  height: 80px;
+  bottom: 0;
+  height: 40px;
   background: #fff;
   text-align: center;
-  line-height: 4;
-  font-size: 1.5em; }
+  font-size: 1.2em; }
+  footer p {
+    padding-top: 10px;
+    color: #999; }
 
 video {
   position: fixed;

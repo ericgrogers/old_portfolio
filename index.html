@@ -13,6 +13,11 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Project Gallery -->
+    <link href="css/gallery.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!-- Main CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -94,60 +99,120 @@
         </section>
 
         <section class="projects" id="projects">
-            <h3 class="col-md-offset-2 col-md-8">Projects</h3>
-            <div id="gallery">
-                <ul>
-                    <li class="col-md-3"><span>Movie Ndex movie search site.</span><a
-                            href="media/images/projects/movieindex.jpg" data-lightbox="gallery
-                    " data-t
-                           itle="Wonderful Gourmet Cupcakes."><img id="img1" src="media/images/projects/thumbs/moviendex_thumb.jpg" alt=""
-                            /></a></li>
-                    <li class="col-md-3"><span>World surf page design.</span><a
-                            href="media/images/projects/worldsurf.jpg"
-                                                          data-lightbox="gallery"
-                           data-title="Delicious Homemade Pizza."><img
-                            id="img2" src="media/images/projects/thumbs/worldsurf_thumb.jpg" alt=""/></a></li>
-                    <li class="col-md-3"><span>Horas Time Management app.</span><a
-                            href="media/images/projects/horas.jpg"
-                                                           data-lightbox="gallery"
-                           data-title="Freshly Baked Croissants."><img
-                            id="img3" src="media/images/projects/thumbs/horas_thumb.jpg" alt=""/></a></li>
-                    <li class="col-md-3"><span>Chilango restaurant redesign.</span><a
-                            href="media/images/projects/chilango.jpg"
-                                                          data-lightbox="gallery"
-                           data-title="Prepping the dough."><img
-                            id="img4" src="media/images/projects/thumbs/chilango_thumb.jpg" alt=""/></a></li>
-                    <li class="col-md-3"><span>Skrollr.js video presentation.</span><a
-                            href="media/images/projects/skrollr.jpg" data-lightbox="gallery"
-                                             data-title="Sweet Honey Cake."><img
-                            id="img5
-                    " src="media/images/projects/thumbs/skrollr_thumb.jpg" alt=""/></a></li>
-                    <li class="col-md-3"><span>Guitar Shop standards project.</span><a
-                            href="media/images/projects/guitarshop.jpg" data-lightbox="gallery"
-                           data-title="Birthday Cupcakes with candy."><img id="img6"
-                           src="media/images/projects/thumbs/guitarshop_thumb.jpg"
-                           alt=""/></a></li>
-                    <li class="col-md-3"><span>Bakery Secrets animation.</span><a
-                            href="media/images/projects/bakerysecrets.jpg" data-lightbox="gallery"
-                           data-title="Birthday Cupcakes with candy."><img id="img7"
-                                                                           src="media/images/projects/thumbs/bakerysecrets_thumb.jpg"
-                                                                           alt=""/></a></li>
-                    <li class="col-md-3"><span>AFS video gallery.</span><a href="media/images/projects/videolibrary.jpg"
-                                                          data-lightbox="gallery"
-                           data-title="Birthday Cupcakes with candy."><img id="img8"
-                                                                           src="media/images/projects/thumbs/videolibrary_thumb.jpg"
-                                                                           alt=""/></a></li>
-                    <li class="col-md-3"><span>Audio/Video editing.</span><a href="media/images/projects/audiovideo.jpg"
-                                                          data-lightbox="gallery"
-                           data-title="Birthday Cupcakes with candy."><img id="img9"
-                                                                           src="media/images/projects/thumbs/audioedit_thumb.jpg"
-                                                                           alt=""/></a></li>
-                    <li class="col-md-3"><span>SoAir Airline page design.</span><a
-                            href="media/images/projects/soair.jpg" data-lightbox="gallery"
-                           data-title="Birthday Cupcakes with candy."><img id="img10"
-                                                                           src="media/images/projects/thumbs/soair_thumb.jpg"
-                                                                           alt=""/></a></li>
-                </ul>
+            <h3 class="col-md-offset-2 col-md-8"><span class="glyphicon glyphicon-arrow-left"
+                                                       id="back-button"></span>My Work<span
+                    class="glyphicon glyphicon-arrow-right" id="forward-button"></span></h3>
+            <div id="gallery" class="col-md-offset-2">
+                <div class="view view-third" id="img1">
+                    <img src="media/images/projects/thumbs/moviendex_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Movie Ndex</h2>
+                        <p>Built with Google App Engine using Python.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/movieindex.jpg" data-lightbox="gallery1"
+                           data-title="Movie Ndex Movie search engine." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img2">
+                    <img src="media/images/projects/thumbs/worldsurf_thumb.jpg" />
+                    <div class="mask">
+                        <h2>World Surf</h2>
+                        <p>Designed using Adobe Photoshop and Adobe Illustrator.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/worldsurf.jpg" data-lightbox="gallery2"
+                           data-title="World Surf site design." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img3">
+                    <img src="media/images/projects/thumbs/horas_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Horas App</h2>
+                        <p>Built using jQuery templating, ajax, php, and mySQL</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/horas.jpg" data-lightbox="gallery3"
+                           data-title="Horas Professional Time Management" class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img4">
+                    <img src="media/images/projects/thumbs/chilango_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Chilango Restaurant</h2>
+                        <p>Redesign using Angular.js.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/chilango.jpg" data-lightbox="gallery4"
+                           data-title="Chilango Restaurant redesign." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img5">
+                    <img src="media/images/projects/thumbs/skrollr_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Skrollr.js</h2>
+                        <p>Video presentation of Skrollr.js.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/skrollr.jpg" data-lightbox="gallery5"
+                           data-title="Skrollr.js video presentation." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img6">
+                    <img src="media/images/projects/thumbs/guitarshop_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Guitar Shop</h2>
+                        <p>Web standards project.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/guitarshop.jpg" data-lightbox="gallery6"
+                           data-title="Guitar Shop." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img7">
+                    <img src="media/images/projects/thumbs/bakerysecrets_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Bakery Secrets</h2>
+                        <p>jQuery animation and interaction.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/bakerysecrets.jpg" data-lightbox="gallery7"
+                           data-title="Bakery secrets Interaction/Animation." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img8">
+                    <img src="media/images/projects/thumbs/videolibrary_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Angular From Scratch</h2>
+                        <p>HTML 5 video gallery.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/videolibrary.jpg" data-lightbox="gallery8"
+                           data-title="Angular From Scratch Video Library." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img9">
+                    <img src="media/images/projects/thumbs/audioedit_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Audio / Video </h2>
+                        <p>Editing using Adobe Audition and Adobe Premiere</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/audiovideo.jpg" data-lightbox="gallery9"
+                           data-title="Audio / Video Editing." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img10">
+                    <img src="media/images/projects/thumbs/soair_thumb.jpg" />
+                    <div class="mask">
+                        <h2>SoAir Airlines</h2>
+                        <p>Page design.</p>
+                        <a href="#" class="info">Read More</a>
+                        <a href="media/images/projects/soair.jpg" data-lightbox="gallery10"
+                           data-title="SoAir Airlines page design." class="info">View</a>
+                        <a href="#" class="info">Live Site</a>
+                    </div>
+                </div>
             </div><!-- End of gallery -->
 
         </section>
@@ -184,6 +249,7 @@
                         <button type="submit" class="btn btn-default">Send</button>
                     </div>
                 </div>
+
             </form>
         </section>
 
@@ -206,6 +272,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/plugins/bootstrap.min.js"></script>
-    <script src="js/plugins/mediaelement-and-player.min.js"></script>
+    <script src="js/plugins/lightbox.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js" type="text/javascript"></script>
   </body>
 </html>
