@@ -1,5 +1,23 @@
 @import "bourbon/bourbon"
 
+// site wide styles
+body
+  font-family: 'Open Sans', sans-serif
+  h1
+    font-family: 'Orbitron', sans-serif
+    color: #666
+
+    span
+      color: #fff
+
+
+  h2
+    color: #ccc
+    border-left: 5px solid #555
+    border-right: 5px solid #555
+    padding: 0 20px
+    display: inline-block
+    border-radius: 50%
 
 // page container
 .page-container
@@ -45,8 +63,10 @@ header
   height: 60px
   cursor: pointer
   z-index: 6
-  color: #333333
+  color: #999
 
+  &:hover
+    color: #333
 
 // side bar nav----------------------
 .sidebar
@@ -85,7 +105,7 @@ header
   &:checked + .page-container
 
     .sidebar
-      left: 0px
+      left: 0
 
 // content container---------------------
 .content-container
@@ -108,7 +128,7 @@ header
   background-color: rgba(0,0,0,0.8)
 
   h1
-    color: #fff
+    //color: #fff
     font-size: 5em
     text-shadow: 0 0 10px #000
 
@@ -121,6 +141,7 @@ header
     margin-top: 150px
 
     p
+      margin-top: -30px
       font-size: 24px
 
 // about me content--------------------
@@ -133,9 +154,12 @@ header
   top: 0
 
   h3
-    padding-top: 30px
-    border-bottom: 1px solid rgba(0,0,0,0.2)
+    padding: 30px 0
+    border-bottom: 1px dotted rgba(0,0,0,0.2)
     text-align: center
+    color: #666
+    font-size: 2em
+    margin-bottom: 30px
 
   img
     max-width: 200px
@@ -158,8 +182,9 @@ header
     text-align: center
     font-size: 2em
     color: #fff
-    border-bottom: 1px solid rgba(255,255,255,0.2)
+    border-bottom: 1px dotted rgba(255,255,255,0.2)
     height: 40px
+    padding-bottom: 60px
 
   ul
     padding: 20px 0 50px
@@ -184,17 +209,20 @@ header
   clear: both
 
   h3
+    position: relative
+    top: -10px
     padding: 50px 0 30px
     font-size: 2em
     text-align: center
-    border-bottom: 1px solid rgba(0,0,0,0.3)
+    border-bottom: 1px dotted rgba(0,0,0,0.3)
     clear: both
+    color: #666
 
   #back-button
     position: absolute
-    left: 50px
+    left: 0
     top: 20%
-    font-size: 3em
+    font-size: 2.5em
     color: rgba(0,0,0,0.5)
     cursor: pointer
 
@@ -203,9 +231,9 @@ header
 
   #forward-button
     position: absolute
-    right: 50px
+    right: 0
     top: 20%
-    font-size: 3em
+    font-size: 2.5em
     color: rgba(0,0,0,0.5)
     cursor: pointer
 
@@ -231,9 +259,9 @@ header
     text-align: center
     color: #fff
     font-size: 2em
-    padding-bottom: 10px
+    padding-bottom: 30px
     margin-bottom: 50px
-    border-bottom: 3px solid rgba(255,255,255,0.2)
+    border-bottom: 3px dotted rgba(255,255,255,0.2)
 
     input
       padding-bottom: 40px
@@ -242,6 +270,12 @@ header
     content: ''
     display: block
     clear: both
+
+  //============= remove this once the form is operational =====================
+  .disable-notice
+    text-align: center
+    color: red
+    font-size: 2em
 
 // footer---------------
 footer

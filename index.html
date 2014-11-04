@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eric G Rogers | Portfolio</title>
 
+      <!-- Pace.CSS -->
+      <link href="css/pace.css" rel="stylesheet">
+      <!-- Pace.JS -->
+      <script type="text/javascript" src="js/plugins/pace.min.js"></script>
     <!-- Normalize.css -->
       <link href="css/normalize.css" rel="stylesheet">
-
+    <!-- Favicon -->
       <link href="media/images/icons/egr.ico" rel="shortcut icon">
-
+    <!-- FONTS -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Project Gallery -->
     <link href="css/gallery.css" rel="stylesheet">
     <!-- Lightbox -->
     <link href="css/lightbox.css" rel="stylesheet">
+      <!-- animations -->
+      <link href="css/animations.css" rel="stylesheet">
     <!-- Main CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
@@ -56,11 +64,11 @@
 
         <section class="top-content">
             <h1>[ <span>eric g rogers</span> ]</h1>
-            <h2>Designer / Developer</h2>
+            <h2 id="word-banner">Designer / Developer</h2>
 
             <div class="down-arrow col-md-12">
                 <p>Find out more</p>
-                <a href="#about"><span class="glyphicon glyphicon-hand-down"></span></a>
+                <a href="#about"><span id="hand" class="floating glyphicon glyphicon-hand-down"></span></a>
             </div>
         </section>
 
@@ -108,10 +116,10 @@
                     <div class="mask">
                         <h2>Movie Ndex</h2>
                         <p>Built with Google App Engine using Python.</p>
-                        <a href="#" class="info">Read More</a>
+                        <!--<a href="#" class="info">Read More</a>-->
                         <a href="media/images/projects/movieindex.jpg" data-lightbox="gallery1"
                            data-title="Movie Ndex Movie search engine." class="info">View</a>
-                        <a href="#" class="info">Live Site</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
                     </div>
                 </div>
                 <div class="view view-third" id="img2">
@@ -119,10 +127,10 @@
                     <div class="mask">
                         <h2>World Surf</h2>
                         <p>Designed using Adobe Photoshop and Adobe Illustrator.</p>
-                        <a href="#" class="info">Read More</a>
+                        <!--<a href="#" class="info">Read More</a>-->
                         <a href="media/images/projects/worldsurf.jpg" data-lightbox="gallery2"
                            data-title="World Surf site design." class="info">View</a>
-                        <a href="#" class="info">Live Site</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
                     </div>
                 </div>
                 <div class="view view-third" id="img3">
@@ -130,10 +138,10 @@
                     <div class="mask">
                         <h2>Horas App</h2>
                         <p>Built using jQuery templating, ajax, php, and mySQL</p>
-                        <a href="#" class="info">Read More</a>
+                        <!--<a href="#" class="info">Read More</a>-->
                         <a href="media/images/projects/horas.jpg" data-lightbox="gallery3"
                            data-title="Horas Professional Time Management" class="info">View</a>
-                        <a href="#" class="info">Live Site</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
                     </div>
                 </div>
                 <div class="view view-third" id="img4">
@@ -141,10 +149,10 @@
                     <div class="mask">
                         <h2>Chilango Restaurant</h2>
                         <p>Redesign using Angular.js.</p>
-                        <a href="#" class="info">Read More</a>
+                        <!--<a href="#" class="info">Read More</a>-->
                         <a href="media/images/projects/chilango.jpg" data-lightbox="gallery4"
                            data-title="Chilango Restaurant redesign." class="info">View</a>
-                        <a href="#" class="info">Live Site</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
                     </div>
                 </div>
                 <div class="view view-third" id="img5">
@@ -152,10 +160,10 @@
                     <div class="mask">
                         <h2>Skrollr.js</h2>
                         <p>Video presentation of Skrollr.js.</p>
-                        <a href="#" class="info">Read More</a>
+                        <!--<a href="#" class="info">Read More</a>-->
                         <a href="media/images/projects/skrollr.jpg" data-lightbox="gallery5"
                            data-title="Skrollr.js video presentation." class="info">View</a>
-                        <a href="#" class="info">Live Site</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=hhIw4Y6Ttjw" class="info">Presentation</a>
                     </div>
                 </div>
                 <div class="view view-third" id="img6">
@@ -163,10 +171,10 @@
                     <div class="mask">
                         <h2>Guitar Shop</h2>
                         <p>Web standards project.</p>
-                        <a href="#" class="info">Read More</a>
+                        <!--<a href="#" class="info">Read More</a>-->
                         <a href="media/images/projects/guitarshop.jpg" data-lightbox="gallery6"
                            data-title="Guitar Shop." class="info">View</a>
-                        <a href="#" class="info">Live Site</a>
+                        <a target="_blank" href="https://ericgrogers.github.io/wsd/" class="info">Live Site</a>
                     </div>
                 </div>
                 <div class="view view-third" id="img7">
@@ -219,34 +227,35 @@
 
         <section class="contact" id="contact">
             <h3 class="col-md-offset-2 col-md-8">Contact Me</h3>
+            <p class="col-md-offset-2 col-md-8 disable-notice">This form is currently disabled on purpose.</p>
             <form class="form-horizontal col-md-offset-2 col-md-8" role="form">
                 <div class="form-group">
                     <label for="name" class="col-md-2 control-label sr-only">Name</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <input type="text" class="form-control" id="name" placeholder="Name" disabled>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email" class="col-md-2 control-label sr-only">Email</label>
                     <div class="col-md-8">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" class="form-control" id="email" placeholder="Email" disabled>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="subject" class="col-md-2 control-label sr-only">Subject</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" disabled>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="message" class="col-md-2 control-label sr-only">Message</label>
                     <div class="col-md-8">
-                        <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                        <textarea class="form-control" id="message" rows="6" placeholder="Message" disabled></textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Send</button>
+                        <button type="submit" class="btn btn-default" disabled>Send</button>
                     </div>
                 </div>
 
