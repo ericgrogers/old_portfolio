@@ -23,6 +23,12 @@
 
     };
 
+    //================ SideBar Functionality ==================>
+    var sidebarActions = function(){
+        $('.home-but, .about-but, .projects-but, .contact-but').on('click', function(e){
+            $('input#sidebar-toggle').attr('checked', false);
+        });
+    };
 
     //============= PROJECTS FUNCTIONALITY =========================>
     var images = [1,2,3];
@@ -42,7 +48,6 @@
         console.log('\n');
         for(i;i<3;i++){
             $(id+images[i]).show();
-            console.log(images[i]);
         }
     };
 
@@ -90,31 +95,44 @@
 
     var listSkills = function(){
         var skills = [
-            'HTML5',
-            'CSS3',
-            'JavaScript',
-            'jQuery',
-            'AngularJS',
-            'Responsive Design',
-            'Database Optimization',
-            'Cross Browser Compatibility',
-            'PHP',
-            'Python',
-            'mySQL',
-            'Google App Engine',
-            'Audio/Video Editing',
-            'OOP/CRUD/REST/API',
-            'Animation',
-            'SEO'
+            '<li class="slideDown col-md-2 col-md-offset-2" >HTML5</li>',
+            '<li class="slideDown col-md-2 " >CSS3</li>',
+            '<li class="slideDown col-md-2 " >JavaScript</li>',
+            '<li class="slideDown col-md-2 " >jQuery</li>',
+            '<li class="slideDown col-md-2 col-md-offset-2" >AngularJS</li>',
+            '<li class="slideDown col-md-2 " >Responsive Design</li>',
+            '<li class="slideDown col-md-2 " >Database Optimization</li>',
+            '<li class="slideDown col-md-2 " >Cross Browser Compatibility</li>',
+            '<li class="slideDown col-md-2 col-md-offset-2" >PHP</li>',
+            '<li class="slideDown col-md-2 " >Python</li>',
+            '<li class="slideDown col-md-2 " >mySQL</li>',
+            '<li class="slideDown col-md-2 " >Google App Engine</li>',
+            '<li class="slideDown col-md-2 col-md-offset-2" >Audio/Video Editing</li>',
+            '<li class="slideDown col-md-2 " >OOP/CRUD/REST/API</li>',
+            '<li class="slideDown col-md-2 " >Animation</li>',
+            '<li class="slideDown col-md-2 " >SEO</li>'
         ];
-
         var i = 0;
+
+        setInterval(function(){
+
+            $('#skill-set').animate({opacity: 0}, 500, function(){
+                $(this).html(skills[i] + skills[i+1] + skills[i+2] + skills[i+3]);
+            }).animate({opacity: 1}, 500);
+            if(i == skills.length -4){
+                i = 0
+            }else{
+                i += 4;
+                console.log(i);
+            }
+
+        }, 5000);
         
     };
 
     //============== H2 WORD BANNER ===============>
     var wordCycle = function(){
-        var words = ["Front-End", "Back-End", "Databases", "Designer / Developer"];
+        var words = ["Front-End", "Back-End", "Designer / Developer"];
         var i = 0;
         setInterval(function(){
             var word = words[i];
@@ -156,6 +174,8 @@
         showImages(images);
         smoothScroll();
         wordCycle();
+        listSkills();
+        sidebarActions();
 
 
         // event listeners
