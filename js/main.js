@@ -86,11 +86,35 @@
         }
     };
 
-    //==================== END PROJECTS FUNCTIONALITY =====================>
+    //==================== Skills Functionality =====================>
+
+    var listSkills = function(){
+        var skills = [
+            'HTML5',
+            'CSS3',
+            'JavaScript',
+            'jQuery',
+            'AngularJS',
+            'Responsive Design',
+            'Database Optimization',
+            'Cross Browser Compatibility',
+            'PHP',
+            'Python',
+            'mySQL',
+            'Google App Engine',
+            'Audio/Video Editing',
+            'OOP/CRUD/REST/API',
+            'Animation',
+            'SEO'
+        ];
+
+        var i = 0;
+        
+    };
 
     //============== H2 WORD BANNER ===============>
     var wordCycle = function(){
-        var words = ["Cutting Edge", "Problem Solver", "Code Junkie", "Designer / Developer"];
+        var words = ["Front-End", "Back-End", "Databases", "Designer / Developer"];
         var i = 0;
         setInterval(function(){
             var word = words[i];
