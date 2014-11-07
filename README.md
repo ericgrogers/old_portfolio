@@ -13,22 +13,22 @@
 ##2. Set up the server.
 
 ####1. Using DigitalOcean hosting, create a new Virtual Private Server using Ubuntu 12.04.5 x32.
-####2.	SSH Into the Server
-  +	ssh root@Server_IP_Address
+2.	SSH Into the Server
+  +	ssh root@ServerIPAddress
   +	Enter password
-####3.	Create Non-Root User
+3.	Create Non-Root User
   +	adduser Username
-####4.	Add the user to the sudo group
+4.	Add the user to the sudo group
   +	adduser Username sudo
-####5. End SSH Session
+5. End SSH Session
   +	exit
-####6.	Login as Non-Root User
+6.	Login as Non-Root User
   +	ssh Username@Server_IP_Address
   +	Enter password
-####7.	Update Package System
+7.	Update Package System
   +	sudo apt-get update
   +	Enter password
-####8.	Upgrade Package System
+8.	Upgrade Package System
   +	sudo apt-get upgrade
 ####9.	Update Packages for Newly Installed Version
   +	sudo apt-get update
