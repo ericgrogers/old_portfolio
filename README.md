@@ -1,4 +1,5 @@
-portfolio
-=========
+#Portfolio Deployment Plan
 
-My personal Portfolio
+##1.Setup A Github repository for development
+ 
+⋅⋅* Unordered sub-list. test
