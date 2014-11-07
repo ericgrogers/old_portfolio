@@ -107,8 +107,8 @@
             '<li class="slideDown col-md-2 " >Python</li>',
             '<li class="slideDown col-md-2 " >mySQL</li>',
             '<li class="slideDown col-md-2 " >Google App Engine</li>',
-            '<li class="slideDown col-md-2 col-md-offset-2" >Audio/Video Editing</li>',
-            '<li class="slideDown col-md-2 " >OOP/CRUD/REST/API</li>',
+            '<li class="slideDown col-md-2 col-md-offset-2" >Audio / Video Editing</li>',
+            '<li class="slideDown col-md-2 " >Object Oriented Programming</li>',
             '<li class="slideDown col-md-2 " >Animation</li>',
             '<li class="slideDown col-md-2 " >SEO</li>'
         ];
@@ -126,7 +126,7 @@
                 console.log(i);
             }
 
-        }, 5000);
+        }, 4000);
         
     };
 
