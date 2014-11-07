@@ -30,9 +30,9 @@
   +	Enter password
 8.	Upgrade Package System
   +	sudo apt-get upgrade
-####9.	Update Packages for Newly Installed Version
+9.	Update Packages for Newly Installed Version
   +	sudo apt-get update
-####10.	Update System level Packages
+10.	Update System level Packages
   +	sudo aptitude update
   +	sudo aptitude safe-upgrade
   +	sudo reboot
