@@ -28,7 +28,7 @@
   +	exit
 
 ####6.	Login as Non-Root User
-  +	ssh Username@Server_IP_Address
+  +	ssh Username@ServerIPAddress
   +	Enter password
 
 ####7.	Update Package System
@@ -54,13 +54,16 @@
 ####2.	Configure Git
   +	git config --global user.name “NAME”
   +	git config --global user.email Your@Email.com
+
 ####3.	Confirm Settings
   +	git config --list
+
 ####4.	Create SSH Keys for Github Access
   +	ssh-keygen -t rsa -C ”YourEmail@example.com”
     +	This will ask if you want to customize the name, you don’t. Just press enter.
   +	Enter a passphrase
   +	Re-enter the passphrase
+
 ####5.	Put the RSA key on file with github.com so this server is treated as a trusted machine.
   +	less ~/.ssh/id_rsa.pub
     +	Copy ALL of the contents of this file to your clipboard.
@@ -72,6 +75,7 @@
 
 ###1.	Install Apache 2
   +	sudo apt-get install apache2
+
 ####2.	Configure ServerName
   +	Restart Server
     +	sudo service apache2 restart
@@ -83,35 +87,44 @@
         +	ServerName localhost
     +	sudo service apache2 restart
     +	Apache should report a successful restart
+
 ####3.	Restrict Access
   +	sudo pico /etc/apache2/conf.d/security
     +	Uncomment <Directory />
     +	Add
       +	Options FollowSymLinks
     +	sudo service apache2 restart
+
 ####4.	Change Permissions to Allow Access
   +	sudo chown -R UserName /var/www
 
-
 ##3. Upload files to server.
+
 ####1. Close server connection.
   + exit
+
 ####2. Change to directory where the portfolio directory is located.
   + cd /Sites/
+
 ####3. tar and gzip the portfolio directory
   + tar -cvzf portfolio.tar.gz portfolio
+
 ####4. Secure Copy the files to the server.
   + scp portfolio.tar.gz Username@serverIPaddress:~/
     + enter password
+
 ####5. SSH into Server
   + ssh Username@seriverIPaddress
+
 ####6. Move the file to the public www directory.
   + mv portfolio.tar.gz /var/www/
+
 ####7. Extract files
   + cd /var/www/
     + tar -xzpvf portfolio.tar.gz
     + verify that the folder exists.
       + ls
+
 ####8. Move portfolio contents to the www directory.
   + cd portfolio
     + mv * ..
